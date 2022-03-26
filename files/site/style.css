@@ -1,0 +1,81 @@
+
+body, select, input{
+ font-size: 16px;   /* кнопка не нажата*/  
+ font-family:  arial;   /* кнопка не нажата*/ 
+ font-style:  normal;   /* кнопка не нажата*/ 
+}
+
+div{  /* значения по умолчанию */
+    display: flex;  /* включили гибкое форматирование */
+}
+
+.all, .block>div{
+    flex-direction: row; /* направление главнеой оси в ряд */    
+}
+.block, .block>.answer{
+    flex-direction: column; /* направление главнеой оси в ряд */    
+}
+.all, .all>.block>.title, .all>.block>.btn{
+    justify-content: center; /* распределение содержимого */
+}
+.block>div{
+    justify-content: space-between; /* распределение содержимого */
+}
+.all{
+    align-items:flex-start; /* выравнивание в поперечной оси */  
+}
+.all{
+    flex-wrap:wrap; /* перос блоков */ 
+}
+
+ /* flex--------------------------- */
+.all{
+    height:90%;  /* заполнили все поле по высоте */
+}
+
+
+
+
+input{
+    text-align:center;
+}
+
+.block>.title{
+  font-size: 24px;   /* кнопка не нажата*/  
+	padding: 10px;
+}
+
+.block>div, .block>div>div{  
+    margin: 5px 10px;   
+}
+
+.block>select{  
+    margin: 5px 50px;   
+}
+
+.block{  
+    border: solid;
+    border-radius: 20px;
+    margin: 10px; 
+	padding: 10px;	
+}
+
+.all>.block>.answer{
+	padding: 10px;
+	margin: 10px;
+	border-radius:10px;
+	border: 1px solid;
+}
+
+.all>.block>.btn{
+	padding: 5px;
+	margin: 10px 50px;
+	border-radius:10px;
+    border-style: outset;
+    background-color: rgb(8, 241, 241);
+	
+}
+
+.all>.block>.btn:active {
+    border-style:inset;
+}
